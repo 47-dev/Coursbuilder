@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.courseBuilder_container {
+    width: 100%;
+    min-height: 100vh; /* Full height of the viewport */
+    background-color: #F9F9F9;
+    font-family: 'Avenir Next', sans-serif;
+    display: flex;
+    flex-direction: column; /* Column layout for header and content */
+    align-items: center;
+    padding-top: 33px; /* Ensure there's space for the fixed header */
+    position: relative; /* Ensure the container remains in position */
+}
+
+.courseBuilder_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; /* Full width to align items */
+    padding: 20px; /* Reduced padding around the container */
+    background-color: #fff;
+    z-index: 1000;
+    margin-top: 20px; /* Reduced margin-top */
+}
+
+.courseBuilder_header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 6px 32px; /* Adjust padding to suit fixed header look */
+}
+
+.courseBuilder_title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.courseBuilder_header_add_component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AF273E;
+    width: 108px;
+    height: 40px;
+    color: #F9F9F9;
+    padding: 8px 16px;
+    gap: 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropdown_menu_container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 292px;
+    padding: 6px 0;
+    gap: 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 10px 0px #002E3926;
+    z-index: 1;
+    opacity: 1; /* Make the dropdown visible */
+    margin-top: 180px; /* Adjust this value as needed */
+    right: 0; /* Align to the right side of the parent */
+    margin-right: 339px;
+}
+
+.menue_details {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 10px 16px;
+    gap: 8px;
+    color: #767676;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menue_details:hover {
+    color: #000;
+    background-color: #F9F9F9;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3; /* Take up remaining space to center */
+}
+
+.img_container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.modules_list {
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px; /* Adjusted margin-top */
+}
